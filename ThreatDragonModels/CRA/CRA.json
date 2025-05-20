@@ -16,11 +16,650 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.4.1",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": 2700,
+              "y": 460
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Utilisateur 1"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "06cb4842-fde2-4761-8c33-2491b8533722"
+                },
+                {
+                  "group": "right",
+                  "id": "887324ef-5dd0-43ca-b4ba-fbf936024fb2"
+                },
+                {
+                  "group": "bottom",
+                  "id": "42f5e607-fc9f-4028-b859-eb4cfd4c1c50"
+                },
+                {
+                  "group": "left",
+                  "id": "922bb11a-497d-4f9b-be38-558d1da7ca25"
+                }
+              ]
+            },
+            "id": "e6604515-03e2-409f-aa09-a9990fd1a5c0",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Utilisateur 1",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "fd8dd99e-653e-4291-8f80-d4a4118bc8a7",
+                  "title": "Nouvelle menace STRIDE",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Usurpation d'identité",
+                  "description": "un attaquant peut se faire passer pour un utilisateur légitime pour initier une session ",
+                  "mitigation": "Gestion des sessions sécurisée",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": "100"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "43cf4ddf-b255-4f7c-9797-3f25cbab92a3",
+            "source": {
+              "cell": "2ec5746d-2c43-46c9-ac41-619a8e09a599",
+              "port": "e7593737-30dc-4f9f-8326-6f0dade49bc8"
+            },
+            "target": {
+              "cell": "2ec5746d-2c43-46c9-ac41-619a8e09a599",
+              "port": "e7593737-30dc-4f9f-8326-6f0dade49bc8"
+            },
+            "vertices": [],
+            "parent": "2ec5746d-2c43-46c9-ac41-619a8e09a599"
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Ouvrir ",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "11ce33d5-f2c0-4591-af82-759ce28bbce7",
+                  "title": "Nouvelle menace STRIDE",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Divulgation d'information",
+                  "description": "Interception de données sensibles",
+                  "mitigation": "Validation des certificats SSL",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": "20"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Ouvrir "
+            ],
+            "id": "d0e4af1f-aae7-4b2a-9324-0e74cda44876",
+            "source": {
+              "cell": "e6604515-03e2-409f-aa09-a9990fd1a5c0",
+              "port": "922bb11a-497d-4f9b-be38-558d1da7ca25"
+            },
+            "target": {
+              "cell": "2ec5746d-2c43-46c9-ac41-619a8e09a599",
+              "port": "a3f433ff-5563-4124-bc85-12410df519fe"
+            },
+            "vertices": [
+              {
+                "x": 2650,
+                "y": 560
+              },
+              {
+                "x": 2630,
+                "y": 580
+              },
+              {
+                "x": 2600,
+                "y": 630
+              },
+              {
+                "x": 2650,
+                "y": 640
+              },
+              {
+                "x": 2700,
+                "y": 680
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Authentier ",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "9652927f-7209-4ec7-b269-72b2b06d99bf",
+                  "title": "Nouvelle menace STRIDE",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Déni de service",
+                  "description": "Attaques par brute force ou surcharge",
+                  "mitigation": "Blocage IP progressif ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": "80"
+                },
+                {
+                  "id": "f5d3fdb4-af06-4df2-9865-dbf84ee0c2c5",
+                  "title": "Nouvelle menace STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Falsification",
+                  "description": "Négation d'une action par l'utilisateur",
+                  "mitigation": "Archivage sécurisé des logs",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": "70"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1
+              }
+            },
+            "labels": [
+              "Authentier "
+            ],
+            "id": "81187772-f845-4311-9d0c-96b118b7d936",
+            "source": {
+              "x": 2755,
+              "y": 670
+            },
+            "target": {
+              "x": 2855,
+              "y": 770
+            },
+            "vertices": [
+              {
+                "x": 2755,
+                "y": 690
+              },
+              {
+                "x": 2820,
+                "y": 720
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": 2720,
+              "y": 580
+            },
+            "size": {
+              "width": 50,
+              "height": 150
+            },
+            "attrs": {
+              "text": {
+                "text": "Web/APP"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "1cdc3dda-22d8-418c-985d-ff165cffb75d"
+                },
+                {
+                  "group": "right",
+                  "id": "60cb247c-acc9-47ea-ac17-d25835746b65"
+                },
+                {
+                  "group": "bottom",
+                  "id": "e7593737-30dc-4f9f-8326-6f0dade49bc8"
+                },
+                {
+                  "group": "left",
+                  "id": "a3f433ff-5563-4124-bc85-12410df519fe"
+                }
+              ]
+            },
+            "id": "2ec5746d-2c43-46c9-ac41-619a8e09a599",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Process",
+              "name": "Web/APP",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": true,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "0f747b40-db81-46d2-82dd-3f0136dbe2c8",
+                  "title": "Nouvelle menace STRIDE",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Falsification",
+                  "description": "Code/paramètres modifiés ou corrompus",
+                  "mitigation": "Validation stricte des entrées ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": "50"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            },
+            "children": [
+              "43cf4ddf-b255-4f7c-9797-3f25cbab92a3"
+            ]
+          },
+          {
+            "position": {
+              "x": 2840,
+              "y": 730
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Login "
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "1cdc3dda-22d8-418c-985d-ff165cffb75d"
+                },
+                {
+                  "group": "right",
+                  "id": "60cb247c-acc9-47ea-ac17-d25835746b65"
+                },
+                {
+                  "group": "bottom",
+                  "id": "e7593737-30dc-4f9f-8326-6f0dade49bc8"
+                },
+                {
+                  "group": "left",
+                  "id": "a3f433ff-5563-4124-bc85-12410df519fe"
+                }
+              ]
+            },
+            "id": "231315ef-7733-4b5a-8ae1-1c3a4b23eb2f",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Process",
+              "name": "Login ",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "601d292e-e3b0-4beb-8c4c-6decd69867a1",
+                  "title": "Nouvelle menace STRIDE",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Élévation de privilège",
+                  "description": "Escalade de droits par vulnérabilité",
+                  "mitigation": "Gestion des droits des utilisateurs ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": "40"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
+            }
+          }
+        ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "TEST",
-    "threatTop": 0
+    "threatTop": 10
   }
 }
